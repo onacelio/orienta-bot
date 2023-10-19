@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
-        <title>Orienta bot</title>
+        <title>Orienta Bot</title>
         <meta name="description" content="descrição do projeto." />
       </head>
       <body className={archivo.className}>
