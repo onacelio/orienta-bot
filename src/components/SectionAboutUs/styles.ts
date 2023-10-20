@@ -148,10 +148,13 @@ export const Content = styled.div`
         animation-name: move;
         animation-duration: 1s;
       }
-
-      width: 100%;
-      height: 100%;
     }
+  }
+
+  > :nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: ${styleGuide.breakpoints.small}) {
