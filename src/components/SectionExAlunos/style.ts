@@ -6,11 +6,20 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
   padding: 1.5rem;
+  align-items: center;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
+`;
+export const ExAlunos = styled.div`
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   h1 {
     text-align: center;
     color: #1e1e1e;
@@ -18,8 +27,12 @@ export const Container = styled.div`
     font-weight: 700;
     line-height: 3rem;
   }
+  p {
+    margin: auto;
+    padding: 1rem;
+    width: 70%;
+  }
 `;
-
 export const Content = styled.div`
   width: 100%;
   max-width: 1440px;

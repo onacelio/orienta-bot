@@ -1,5 +1,6 @@
 import {
   Container,
+  ExAlunos,
   Content,
   SliderButtonNext,
   SliderButtonPrev,
@@ -7,6 +8,7 @@ import {
   StyledSlider,
   SuccessStoriesSliderContainer
 } from './style';
+import { BannerImageSlider } from './BannerImageSlider';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi';
@@ -74,39 +76,41 @@ export function SectionExAlunos() {
 
   return (
     <Container>
-      <h1>Experiências de Ex-alunos</h1>
-      <p>
-        A satisfação do cliente é nosso objetivo final, e trabalhamos
-        incansavelmente para alcançá-la. Afinal, a opinião dos nossos clientes é
-        o que realmente importa. Aqui está o que nossos clientes pensam de nós,
-        suas experiências e feedbacks, que moldam constantemente a nossa busca
-        pela excelência.
-      </p>
+      <ExAlunos>
+        <h1>Experiências de Ex-alunos</h1>
+        <p>
+          A satisfação do cliente é nosso objetivo final, e trabalhamos
+          incansavelmente para alcançá-la. Afinal, a opinião dos nossos clientes
+          é o que realmente importa. Aqui está o que nossos clientes pensam de
+          nós, suas experiências e feedbacks, que moldam constantemente a nossa
+          busca pela excelência.
+        </p>
 
-      <Content>
-        <SuccessStoriesSliderContainer>
-          <SliderButtonPrev disabled={isPrevDisabled} onClick={handlePrev}>
-            <BiSolidLeftArrow />
-          </SliderButtonPrev>
+        <Content>
+          <SuccessStoriesSliderContainer>
+            <SliderButtonPrev disabled={isPrevDisabled} onClick={handlePrev}>
+              <BiSolidLeftArrow />
+            </SliderButtonPrev>
 
-          <StyledSlider {...settings} ref={sliderRef}>
-            {cases.map((slide, index) => (
-              <SliderItem key={index}>
-                <div>
-                  descricao={slide.descricao}
-                  funcao={slide.funcao}
-                  image={slide.image}
-                  nome={slide.nome}
-                </div>
-              </SliderItem>
-            ))}
-          </StyledSlider>
+            <StyledSlider {...settings} ref={sliderRef}>
+              {cases.map((slide, index) => (
+                <SliderItem key={index}>
+                  <BannerImageSlider
+                    descricao={slide.descricao}
+                    funcao={slide.funcao}
+                    image={slide.image}
+                    nome={slide.nome}
+                  />
+                </SliderItem>
+              ))}
+            </StyledSlider>
 
-          <SliderButtonNext disabled={isNextDisabled} onClick={handleNext}>
-            <BiSolidRightArrow />
-          </SliderButtonNext>
-        </SuccessStoriesSliderContainer>
-      </Content>
+            <SliderButtonNext disabled={isNextDisabled} onClick={handleNext}>
+              <BiSolidRightArrow />
+            </SliderButtonNext>
+          </SuccessStoriesSliderContainer>
+        </Content>
+      </ExAlunos>
     </Container>
   );
 }
