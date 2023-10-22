@@ -59,12 +59,17 @@ export const Hero = styled.div`
     }
 
     button {
-      background: ${styleGuide.colors.yellow.yelloPrincipal};
+      background: ${styleGuide.colors.yellow.yeellowCard};
       max-width: 60%;
       border-radius: 0.3125rem;
       padding: 0.5rem;
       color: #fff;
       font-weight: 600;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        background: ${styleGuide.colors.yellow.yelloPrincipal};
+      }
     }
   }
 
