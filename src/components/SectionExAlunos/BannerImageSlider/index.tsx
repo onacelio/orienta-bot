@@ -1,5 +1,13 @@
 import { StaticImageData } from 'next/image';
-import { BannerContainer, Descricao, Nome, Funcao, Image } from './styles';
+import {
+  BannerContainer,
+  Descricao,
+  Nome,
+  Funcao,
+  Image,
+  Card,
+  Card1
+} from './styles';
 
 interface CardProps {
   descricao: string;
@@ -16,9 +24,13 @@ export function BannerImageSlider({
 }: CardProps) {
   return (
     <BannerContainer>
-      <Image image={image}></Image>
-      <Nome>{nome}</Nome>
-      <Funcao>{funcao}</Funcao>
+      <Card1>
+        <Image image={image}></Image>
+        <Card>
+          <Nome>{nome}</Nome>
+          <Funcao>{funcao}</Funcao>
+        </Card>
+      </Card1>
       <Descricao>{descricao}</Descricao>
     </BannerContainer>
   );

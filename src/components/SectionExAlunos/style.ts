@@ -16,7 +16,6 @@ export const ExAlunos = styled.div`
   width: 100%;
   height: auto;
   max-width: 1440px;
-  padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -28,9 +27,26 @@ export const ExAlunos = styled.div`
     line-height: 3rem;
   }
   p {
+    color: rgba(71, 69, 69, 0.91);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     margin: auto;
     padding: 1rem;
-    width: 70%;
+    width: 95%;
+    @media (max-width: ${styleGuide.breakpoints.small}) {
+      padding: 0;
+      font-size: 1.25rem;
+      font-weight: 0;
+    }
+    @media (max-width: ${styleGuide.breakpoints.xsmall}) {
+      padding-inline: 1.25rem;
+      width: 100%;
+    }
+    @media (max-width: ${styleGuide.breakpoints.largesmall}) {
+      font-size: 1.1rem;
+    }
   }
 `;
 export const Content = styled.div`
@@ -50,7 +66,6 @@ export const SliderButton = styled.button`
   width: 40px;
   display: flex;
   cursor: pointer;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,17 +90,17 @@ export const SliderButton = styled.button`
 `;
 
 export const SliderButtonPrev = styled(SliderButton)`
-  left: 20px;
+  left: 250px;
 
   @media (min-width: ${styleGuide.breakpoints.large}) {
-    left: 80px;
+    left: 300px;
   }
 `;
 export const SliderButtonNext = styled(SliderButton)`
-  right: 20px;
+  right: 250px;
 
   @media (min-width: ${styleGuide.breakpoints.large}) {
-    right: 80px;
+    right: 300px;
   }
 `;
 

@@ -13,9 +13,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi';
 import Slider, { Settings } from 'react-slick';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { StaticImageData } from 'next/image';
-import perfil from '@/assets/img/Ellipse 13.svg';
+import image from '@/assets/img/avatar-card.svg';
 interface Cases {
   descricao: string;
   nome: string;
@@ -25,23 +25,23 @@ interface Cases {
 
 const cases: Cases[] = [
   {
-    funcao: 'Mark Elliot Zuckerberg',
-    nome: 'Diretor executivo do Facebook',
-    image: perfil.src,
+    nome: 'Mark Elliot Zuckerberg',
+    funcao: 'Diretor executivo do Facebook',
+    image: image.src,
     descricao:
       '“Uma empresa organizada, dinâmica que interage diretamente com o cliente possibilitando trazer sempre os melhores resultados para o negócio.”'
   },
   {
-    funcao: 'Mark Elliot Zuckerberg 11',
-    nome: 'Diretor executivo do Facebook',
-    image: perfil.src,
+    nome: 'Mark Elliot Zuckerberg 11',
+    funcao: 'Diretor executivo do Facebook',
+    image: image.src,
     descricao:
       '“Uma empresa organizada, dinâmica que interage diretamente com o cliente possibilitando trazer sempre os melhores resultados para o negócio.”'
   },
   {
-    funcao: 'Mark Elliot Zuckerberg 22',
-    nome: 'Diretor executivo do Facebook',
-    image: perfil.src,
+    nome: 'Mark Elliot Zuckerberg 22',
+    funcao: 'Diretor executivo do Facebook',
+    image: image.src,
     descricao:
       '“Uma empresa organizada, dinâmica que interage diretamente com o cliente possibilitando trazer sempre os melhores resultados para o negócio.”'
   }
@@ -53,11 +53,17 @@ export function SectionExAlunos() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handlePrev = () => {
-    sliderRef.current?.slickPrev();
+    if (slideIndex === 0) {
+      return sliderRef.current?.slickGoTo(cases.length - 1);
+    }
+    return sliderRef.current?.slickPrev();
   };
 
   const handleNext = () => {
-    sliderRef.current?.slickNext();
+    if (slideIndex === cases.length - 1) {
+      return sliderRef.current?.slickGoTo(0);
+    }
+    return sliderRef.current?.slickNext();
   };
 
   const settings: Settings = {
@@ -71,8 +77,14 @@ export function SectionExAlunos() {
     }
   };
 
-  const isNextDisabled = slideIndex === cases.length - 1;
-  const isPrevDisabled = slideIndex === 0;
+  useEffect(() => {
+    const time = setTimeout(() => {
+      handleNext();
+    }, 15000);
+    return () => {
+      clearTimeout(time);
+    };
+  });
 
   return (
     <Container>
@@ -88,13 +100,18 @@ export function SectionExAlunos() {
 
         <Content>
           <SuccessStoriesSliderContainer>
-            <SliderButtonPrev disabled={isPrevDisabled} onClick={handlePrev}>
+            <SliderButtonPrev onClick={handlePrev}>
               <BiSolidLeftArrow />
             </SliderButtonPrev>
 
             <StyledSlider {...settings} ref={sliderRef}>
               {cases.map((slide, index) => (
-                <SliderItem key={index}>
+                <SliderItem
+                  style={{
+                    transform: `translateX(-${cases.length * 100}%)`
+                  }}
+                  key={index}
+                >
                   <BannerImageSlider
                     descricao={slide.descricao}
                     funcao={slide.funcao}
@@ -105,7 +122,7 @@ export function SectionExAlunos() {
               ))}
             </StyledSlider>
 
-            <SliderButtonNext disabled={isNextDisabled} onClick={handleNext}>
+            <SliderButtonNext onClick={handleNext}>
               <BiSolidRightArrow />
             </SliderButtonNext>
           </SuccessStoriesSliderContainer>
