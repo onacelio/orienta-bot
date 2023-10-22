@@ -1,10 +1,18 @@
-import { SectionAboutUs, SectionExAlunos } from '@/components';
+'use client';
+import { SectionAboutUs, SectionExAlunos, SectionHero } from '@/components';
+import styled from 'styled-components';
+
+const Container = styled.main`
+  width: 100%;
+  overflow: hidden;
+`;
 
 export default function Home() {
   return (
-    <>
-      <SectionAboutUs />
+    <Container>
+      <SectionHero />
       <SectionExAlunos />
-    </>
+      <SectionAboutUs />
+    </Container>
   );
 }

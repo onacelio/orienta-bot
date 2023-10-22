@@ -11,7 +11,7 @@ export function SectionAboutUs() {
       icon: BiSolidGroup,
       subtitle: 'Quem somos e o que fazemos',
       description:
-        'Nosso objetivo é simplificar a integração dos estagiários, fornecendo informações úteis e orientações sobre procedimentos, recursos e oportunidades disponíveis na escola. Com o apoio de nossos professores e colegas, estamos empenhados em criar um chatbot inteligente e amigável que beneficiará toda a comunidade escolar, transformando a tecnologia em uma aliada na educação e no desenvolvimento profissional.',
+        'Somos a turma do 3°ano de informática e estamos desenvolvendo um chatbot que será destinado aos futuros estagiários, sanando dúvidas futuras. Ao longo dos nossos 3 anos de cursos desenvolvemos diversos projetos nos quais tiveram diversos objetivos e focos pessoais, mas dessa vez o nosso projeto é para você estagiário. Queremos facilitar a jornada dos estudantes, fornecendo-lhes um assistente digital capaz de disponibilizar orientações e esclarecer dúvidas de maneira eficiente.',
       image: images.tabone
     },
     {
@@ -19,15 +19,18 @@ export function SectionAboutUs() {
       icon: BiSolidHelpCircle,
       subtitle: 'Por quê Orienta Bot?',
       description:
-        'Nosso objetivo é simplificar a integração dos estagiários, fornecendo informações úteis e orientações sobre procedimentos, recursos e oportunidades disponíveis na escola. Com o apoio de nossos professores e colegas, estamos empenhados em criar um chatbot inteligente e amigável que beneficiará toda a comunidade escolar, transformando a tecnologia em uma aliada na educação e no desenvolvimento profissional.',
+        'O nome surgiu da ideia de integrar a tecnologia de um ChatBot com a necessidade de facilitar a orientação de estudantes de ensino médio e profissional. Desse modo, nasceu a expressão "OrientaBot". Assim, podemos melhorar as relações para com a sociedade, aprimorar nosso elo com a tecnologia e fortalecer a disseminação de informação.',
       image: images.tabtwo
     },
     {
       title: 'Objetivos',
       icon: BiSolidDetail,
       subtitle: 'Nossos objetivos',
-      description:
-        'Nosso objetivo é simplificar a integração dos estagiários, fornecendo informações úteis e orientações sobre procedimentos, recursos e oportunidades disponíveis na escola. Com o apoio de nossos professores e colegas, estamos empenhados em criar um chatbot inteligente e amigável que beneficiará toda a comunidade escolar, transformando a tecnologia em uma aliada na educação e no desenvolvimento profissional.',
+      description: `Nosso objetivo é simplificar a integração de você, estagiário, nessa nova etapa do curso técnico.
+        Com o chatbot, podemos: te orienta, fazer com que você fique a par de todo processo de estágio, sanar dúvidas a respeito dos seus deveres e direitos, listar as suas oportunidades.
+        Nada melhor do que transformar a tecnologia em uma aliada da educação e do desenvolvimento profissional, não
+        é!?
+        `,
       image: images.tabthree
     }
   ];
