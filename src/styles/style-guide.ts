@@ -16,6 +16,7 @@ export const styleGuide = Object.freeze({
     xlarge: '1.5rem',
     xxlarge: '1.625rem',
     titleSmall: '1.875rem',
+    titleDefault: '2rem',
     titleMedium: '2.5rem',
     titleLarge: '3rem',
     titleXLarge: '4rem'
