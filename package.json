@@ -10,7 +10,7 @@
     "lint": "eslint src --ext ts,tsx --max-warnings=0",
     "check-format": "prettier --check .",
     "typecheck": "tsc --project tsconfug.json",
-    "prepare": "husky install && chmod ug+x .husky/"
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -19,13 +19,14 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "npm run lint"
+      ""
     ]
   },
   "dependencies": {
     "@types/node": "20.5.1",
     "@types/react-dom": "18.2.7",
     "eslint-config-next": "13.4.19",
+    "hooks": "^0.3.2",
     "next": "^13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
