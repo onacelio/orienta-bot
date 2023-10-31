@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import OrientaBot from "@/assets/img/header/OrientaLogo.svg"
 import {Container,ButtonMenu, Ul} from "./style";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export function HeaderHome(){
@@ -40,7 +40,7 @@ export function HeaderHome(){
                         <Link
                             key={name}
                             href={link}
-                            className={`${pathname.startsWith(link) ? 'active' : ''}`}
+                            className={`${pathname === link ? 'active' : ''}`}
                         >
                             {name}
                         </Link>
