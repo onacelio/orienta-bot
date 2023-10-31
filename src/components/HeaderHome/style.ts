@@ -46,16 +46,8 @@ export const Container = styled.header`
                 color: ${styleGuide.colors.yellow.yelloPrincipal}
             }
 
-                #active{
-                    color: ${styleGuide.colors.yellow.yelloPrincipal};
-                    border-bottom: 3px solid ${styleGuide.colors.yellow.yelloPrincipal};
-                }
-                a:hover{
-                    color: ${styleGuide.colors.yellow.yelloPrincipal};
-                    border-bottom: 3px solid ${styleGuide.colors.yellow.yelloPrincipal};
-                    font-size: 1.2rem;
-
-                }
+                
+                
                 button {
                     background: ${styleGuide.colors.yellow.yelloPrincipal};
                     border-radius: 0.3125rem;
@@ -123,6 +115,7 @@ export const Ul = styled.ul`
     list-style: none;
     align-items: center;
     right: 0;
+    gap: 1rem;
     
 
     a{
@@ -130,10 +123,15 @@ export const Ul = styled.ul`
         font-size: 1.09375rem;
         font-weight: 500;
         padding: 0.3125rem 0.5rem 0.28125rem 0.5625rem;
-        border-bottom: ${styleGuide.colors.gray.color100} 3px solid;             
+        border-bottom: ${styleGuide.colors.gray.color100} 3px solid;    
+        transition: 1s;         
     }
     a:hover{
-        font-size: 1.2rem; 
+        border-bottom: ${styleGuide.colors.yellow.yelloPrincipal} 3px solid;
+    }
+    .active{
+        color: ${styleGuide.colors.yellow.yelloPrincipal};
+        border-bottom: 3px solid ${styleGuide.colors.yellow.yelloPrincipal};
     }
 
     @media (max-width: ${styleGuide.breakpoints.small}){
