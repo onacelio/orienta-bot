@@ -25,25 +25,32 @@ interface Cases {
 
 const cases: Cases[] = [
   {
-    nome: 'Mark Elliot Zuckerberg',
-    funcao: 'Diretor executivo do Facebook',
+    nome: 'Levi Pessoa',
+    funcao: 'Curso Técnico Em Redes de Computadores',
     image: image.src,
     descricao:
-      '“Uma empresa organizada, dinâmica que interage diretamente com o cliente possibilitando trazer sempre os melhores resultados para o negócio.”'
+      'Meu nome é Levi Pessoa, fui aluno da Maria Célia do curso Tec. em Redes de computadores no ano de 2020 a 2022. Minha experiência de estágio foi na secretaria de Saúde de Pereiro Ceará, onde tive uma ótima experiência, pois, o local é os profissionais que lá estão são maravilhosos. Lá na secretaria fiquei na parte de atualização vacinas no sistema e atualização de cadastros do SUS (Sistema Único de Saúde). Com isso teve várias vezes que fiz limpeza e ajudei os profissionais da minha área a concertar os Computadores e as redes do local. o estagio foi de total importância para meu curso como o crescimento pessoal e profissional no estágio, vi como seria uma jornada de trabalho e assim peguei experiência e conhecimento.'
   },
   {
-    nome: 'Mark Elliot Zuckerberg 11',
-    funcao: 'Diretor executivo do Facebook',
+    nome: 'Luan dos Santos',
+    funcao: 'Curso Técnico Em  Redes de Computadores',
     image: image.src,
     descricao:
-      '“Uma empresa organizada, dinâmica que interage diretamente com o cliente possibilitando trazer sempre os melhores resultados para o negócio.”'
+      'Meu nome é Luan dos Santos, sou da escola Poeta Sinó Pinheiro em Jaguaribe, e estou cursando o curso de redes de computadores. Iniciei o período de estágio apreensivo com tudo aquilo que eu estava prestes a vivenciar, mas logo no início, ao ser introduzido ao mercado de trabalho me senti acolhido e preenchido com toda a gama de profissionais experientes prontos para me proporcionar uma vasta construção de conhecimento. Enfim, a experiência de estágio está sendo única e excepcional para a minha construção enquanto profissional adentrando com a primeira experiência no mercado de trabalho.'
   },
   {
-    nome: 'Mark Elliot Zuckerberg 22',
-    funcao: 'Diretor executivo do Facebook',
+    nome: 'Mateus Henrique Bessa',
+    funcao: 'Curso Técnico Em  Fruticultura',
     image: image.src,
     descricao:
-      '“Uma empresa organizada, dinâmica que interage diretamente com o cliente possibilitando trazer sempre os melhores resultados para o negócio.”'
+      'Mateus Henrique Bessa Silva. EEEP Professora Maria Célia Pinheiro Falcão. Curso Técnico em Fruticultura. Minha experiência no estágio tem sido um divisor de águas. Pois trabalhar estudar ao mesmo tempo tem me ajudado na minha área social como estudante. De maneira que em cada oportunidade eu tenho procurado me posicionar para dar o meu máximo. Aprendi que é possível chegar onde se quer e fazer aquilo que muitos dizem que não tem capacidade. Dica para futuros estagiários: se doar para lá na frente perceber que valeu a pena.'
+  },
+  {
+    nome: 'Pablo Kaue',
+    funcao: 'Curso Técnico Em Informática',
+    image: image.src,
+    descricao:
+      'Minha experiência como estagiário foi uma das melhores possíveis, pois foi o meu primeiro contato com o mundo do trabalho. Pelas empresas que passei pude conhecer pessoas incríveis e mostrar um pouco do que aprendi na escola. Da montagem e desmontagem de PC até a criação de códigos, sempre procurei dar meu máximo, e esse é o conselho que dou, procure dar seu máximo independente de onde você esteja e o que esteja fazendo, e não ser melhor que ninguém, e se que o seu "eu" de ontem.'
   }
 ];
 

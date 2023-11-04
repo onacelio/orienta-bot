@@ -28,24 +28,28 @@ export const ExAlunos = styled.div`
   }
   p {
     color: rgba(71, 69, 69, 0.91);
-    font-size: 20px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin: auto;
     padding: 1rem;
-    width: 95%;
+    width: 89%;
+    @media (max-width: ${styleGuide.breakpoints.large}) {
+      width: 95%;
+    }
     @media (max-width: ${styleGuide.breakpoints.small}) {
       padding: 0;
       font-size: 1.25rem;
       font-weight: 0;
     }
     @media (max-width: ${styleGuide.breakpoints.xsmall}) {
+      font-size: 1.1rem;
       padding-inline: 1.25rem;
-      width: 100%;
+      width: 95%;
     }
     @media (max-width: ${styleGuide.breakpoints.largesmall}) {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -54,7 +58,7 @@ export const Content = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem;
-  height: 684px;
+  height: auto;
 `;
 
 export const SuccessStoriesSliderContainer = styled.div`
@@ -90,14 +94,14 @@ export const SliderButton = styled.button`
 `;
 
 export const SliderButtonPrev = styled(SliderButton)`
-  left: 250px;
+  left: 170px;
 
   @media (min-width: ${styleGuide.breakpoints.large}) {
     left: 300px;
   }
 `;
 export const SliderButtonNext = styled(SliderButton)`
-  right: 250px;
+  right: 170px;
 
   @media (min-width: ${styleGuide.breakpoints.large}) {
     right: 300px;
