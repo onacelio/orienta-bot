@@ -94,16 +94,17 @@ export const Funcao = styled.div`
 export const Descricao = styled.div`
   max-width: 570px;
   color: #1e1e1e;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   opacity: 0.7;
+  text-align: justify;
 
   @media (max-width: ${styleGuide.breakpoints.xsmall}) {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   @media (max-width: ${styleGuide.breakpoints.largesmall}) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
