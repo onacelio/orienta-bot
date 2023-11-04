@@ -3,13 +3,13 @@ import OrientaBot from "@/assets/img/header/OrientaLogo.svg"
 import {Container,ButtonMenu, Ul} from "./style";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-
+import Image from "next/image";
 export function HeaderHome(){
     const [headerCor, setheaderCor] = useState(false);
 
     useEffect(function(){
         function posScroll(){
-            if(window.scrollY >= 150){
+            if(window.scrollY >= 100){
                 setheaderCor(true)
             }else{
                 setheaderCor(false)
@@ -25,17 +25,19 @@ export function HeaderHome(){
         {
             name: "Home",
             link: "/",
+        },{
+            name: "Comandos",
+            link: "/comandos"
         }
     ]
-    
     return(
-        <Container headerCor={headerCor}>
+        <Container $headerCor={headerCor}>
             <nav>
                 <div>
-                    <img src={OrientaBot.src} alt="Orienta Bot Logo" className="logo"/>
-                    <p className={headerCor ? 'pscrolls' : ''}>ORIENTA <span>BOT</span></p>
+                    <Image src={OrientaBot} alt="Logo" className="logo" priority={true}/>
+                    <p>ORIENTA <span>BOT</span></p>
                 </div>
-                <Ul open={open} headerCor={headerCor}>
+                <Ul $open={open}$headerCor={headerCor}>
                     {navLink.map(({ link, name }) =>(
                         <Link
                             key={name}
@@ -47,7 +49,7 @@ export function HeaderHome(){
                     ))}
                 </Ul>
                 <button type="button" className="noneD">Acessar o Bot</button>
-                <ButtonMenu open={open} onClick={()=> setOpen(!open)} >
+                <ButtonMenu $open={open} onClick={()=> setOpen(!open)} >
                     <div />
                     <div />
                     <div />
