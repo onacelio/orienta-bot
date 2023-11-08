@@ -46,9 +46,9 @@ export function ComandsPage() {
     e: MouseEvent<HTMLSpanElement, MouseEvent>,
     index: SetStateAction<number>
   ) => {
-    setItem({ name: e.target.textContent });
+    const evento = e.target as HTMLElement;
+    setItem({ name: evento.textContent || '' });
     setActive(index);
-    console.log(item);
   };
 
   return (
@@ -91,7 +91,7 @@ export function ComandsPage() {
                 >
                   <Typography
                     sx={{
-                      width: '33%',
+                      width: '30%',
                       flexShrink: 0,
                       color: `${styleGuide.colors.yellow.yelloPrincipal}`,
                       fontSize: `${styleGuide.fontSize.default}`,

@@ -9,17 +9,9 @@
     "react": {
       "version": "detect"
     },
-    "import/extensions": [
-      ".js",
-      ".jsx",
-      ".ts",
-      ".tsx"
-    ],
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     },
     "import/resolver": {
       "typescript": {
@@ -67,10 +59,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".ts", ".tsx"]
       }
     ],
     "@typescript-eslint/no-explicit-any": "off",
@@ -90,19 +79,14 @@
     "eslint-disable-next-line": "off",
     "react/display-name": "off",
     "prettier/prettier": "off",
-    "testing-library/no-debugging-utils": "off"
+    "testing-library/no-debugging-utils": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off"
   },
   "overrides": [
     {
-      "files": [
-        "**/__tests__/**/*.tsx?",
-        "**/?(*.)+(spec|test).tsx?"
-      ],
-      "plugins": [
-        "jest-dom",
-        "testing-library",
-        "jest"
-      ],
+      "files": ["**/__tests__/**/*.tsx?", "**/?(*.)+(spec|test).tsx?"],
+      "plugins": ["jest-dom", "testing-library", "jest"],
       "extends": [
         "plugin:jest-dom/recommended",
         "plugin:testing-library/react",

@@ -6,6 +6,7 @@ export const Container = styled.section`
   height: auto;
   padding: 1.5rem;
   position: relative;
+  top: 64px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -144,9 +145,15 @@ export const Content = styled.div`
         }
       }
 
+      display: none;
+
       &.activeAnimation {
         animation-name: move;
         animation-duration: 1s;
+      }
+
+      @media (min-width: ${styleGuide.breakpoints.small}) {
+        display: flex;
       }
     }
   }

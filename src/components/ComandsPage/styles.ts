@@ -47,10 +47,8 @@ export const Topics = styled.div`
   padding: 2rem;
   width: 100%;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
-
-  position: sticky;
-  top: 150px;
-  z-index: 9999;
+  text-transform: uppercase;
+  font-weight: 600;
 
   > div {
     display: flex;
@@ -82,6 +80,10 @@ export const Topics = styled.div`
     width: calc(100% / 3);
     height: 100%;
     max-height: 50%;
+
+    position: sticky;
+    top: 150px;
+    z-index: 9999;
   }
 `;
 
@@ -91,6 +93,6 @@ export const Comands = styled.div`
 
   @media (min-width: ${styleGuide.breakpoints.medium}) {
     width: calc((100% / 3) * 2);
-    padding: 2rem;
+    padding: 0 2rem;
   }
 `;
