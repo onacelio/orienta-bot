@@ -8,9 +8,11 @@ export const Container = styled.div`
   padding: 1.5rem;
   align-items: center;
   position: relative;
+  top: 64px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 64px;
 `;
 export const ExAlunos = styled.div`
   width: 100%;

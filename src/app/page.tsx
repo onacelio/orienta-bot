@@ -1,5 +1,5 @@
 'use client';
-import { Footer, SectionAboutUs, SectionExAlunos, SectionHero } from '@/components';
+import { SectionAboutUs, SectionExAlunos, SectionHero } from '@/components';
 import styled from 'styled-components';
 
 const Container = styled.main`
@@ -13,7 +13,6 @@ export default function Home() {
       <SectionHero />
       <SectionAboutUs />
       <SectionExAlunos />
-      <Footer />
     </Container>
   );
 }

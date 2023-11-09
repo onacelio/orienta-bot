@@ -5,7 +5,7 @@ import { styleGuide } from '@/styles/style-guide';
 import { Archivo } from 'next/font/google';
 import { ThemeProvider } from 'styled-components';
 import StyledComponentsRegistry from '@/lib/register';
-import { HeaderHome } from '@/components';
+import { Footer, HeaderHome } from '@/components';
 
 const archivo = Archivo({ subsets: ['latin'] });
 
@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <GlobalStyles />
             <HeaderHome />
             {children}
+            <Footer />
           </ThemeProvider>
         </StyledComponentsRegistry>
       </body>
