@@ -114,6 +114,8 @@ export const Ul = styled.ul<ButtonProps & ContainerProps>`
     color: ${({ $headerCor }) => ($headerCor ? '#f1f1f1' : '#171717')};
     font-size: 1.09375rem;
     font-weight: 500;
+    top: 5.4rem;
+
     padding: 0.3125rem 0.5rem 0.28125rem 0.5625rem;
     border-bottom: ${({ $headerCor }) =>
       $headerCor ? '#fff 3px solid' : '#171717 3px solid'};
