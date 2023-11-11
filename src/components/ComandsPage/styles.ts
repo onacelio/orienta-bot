@@ -11,6 +11,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 100px;
 `;
 
 export const Texts = styled.div`

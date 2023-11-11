@@ -15,7 +15,7 @@ export const Container = styled.header<ContainerProps>`
   padding: 1rem 4.8rem;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 0.5px 16px;
   background-color: ${({ $headerCor }) => ($headerCor ? '#1c1c1c' : '#fff')};
-  z-index: 9999;
+  z-index: 9999999999;
   transition: 1s;
 
   nav {
