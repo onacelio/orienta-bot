@@ -12,9 +12,10 @@ export const BannerContainer = styled.div`
   margin: auto;
   display: flex;
   gap: 1rem;
+  border: 1px solid #ffc045;
   border-radius: 39px;
-  background: #ffc045;
-  padding: 3rem;
+  background: transparent;
+  padding: 2rem;
   flex-direction: column;
   @media (max-width: ${styleGuide.breakpoints.xsmall}) {
     padding: 1rem 2rem 1rem 2rem;
@@ -41,24 +42,12 @@ export const Image = styled.div<SliderBannerImage>`
   }
 `;
 export const Card = styled.div`
-  margin-top: 1.25rem;
-  margin-left: 13px;
   @media (max-width: ${styleGuide.breakpoints.xsmall}) {
     margin-left: 0.5rem;
     margin-top: 7px;
   }
   @media (max-width: ${styleGuide.breakpoints.largesmall}) {
     font-size: 0.8rem;
-  }
-`;
-export const Card1 = styled.div`
-  display: flex;
-  margin-left: 1rem;
-  @media (max-width: ${styleGuide.breakpoints.xsmall}) {
-    display: flex;
-  }
-  @media (max-width: ${styleGuide.breakpoints.largesmall}) {
-    margin-left: 0.5rem;
   }
 `;
 export const Nome = styled.div`
@@ -82,7 +71,7 @@ export const Funcao = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  max-width: 278px;
+  max-width: 350px;
   opacity: 0.5;
   @media (max-width: ${styleGuide.breakpoints.xsmall}) {
     font-size: 0.95rem;
@@ -96,7 +85,7 @@ export const Descricao = styled.div`
   color: #1e1e1e;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 550;
   line-height: normal;
   opacity: 0.7;
   text-align: justify;

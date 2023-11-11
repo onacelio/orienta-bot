@@ -26,32 +26,6 @@ export const ExAlunos = styled.div`
     font-weight: 700;
     line-height: 3rem;
   }
-  p {
-    color: rgba(71, 69, 69, 0.91);
-    font-size: 1.375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: auto;
-    padding: 1rem;
-    width: 89%;
-    @media (max-width: ${styleGuide.breakpoints.large}) {
-      width: 95%;
-    }
-    @media (max-width: ${styleGuide.breakpoints.small}) {
-      padding: 0;
-      font-size: 1.25rem;
-      font-weight: 0;
-    }
-    @media (max-width: ${styleGuide.breakpoints.xsmall}) {
-      font-size: 1.1rem;
-      padding-inline: 1.25rem;
-      width: 95%;
-    }
-    @media (max-width: ${styleGuide.breakpoints.largesmall}) {
-      font-size: 1rem;
-    }
-  }
 `;
 export const Content = styled.div`
   width: 100%;
@@ -94,17 +68,17 @@ export const SliderButton = styled.button`
 `;
 
 export const SliderButtonPrev = styled(SliderButton)`
-  left: 170px;
-
+  left: 603px;
+  margin-top: 185px;
   @media (min-width: ${styleGuide.breakpoints.large}) {
-    left: 300px;
+    left: 585px;
   }
 `;
 export const SliderButtonNext = styled(SliderButton)`
-  right: 170px;
-
+  right: 603px;
+  margin-top: 185px;
   @media (min-width: ${styleGuide.breakpoints.large}) {
-    right: 300px;
+    right: 585px;
   }
 `;
 
