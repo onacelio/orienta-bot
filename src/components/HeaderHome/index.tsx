@@ -18,7 +18,6 @@ export function HeaderHome() {
     window.addEventListener('scroll', posScroll);
   }, []);
   const [open, setOpen] = useState(false);
-
   const pathname = usePathname();
 
   const navLink = [
@@ -43,6 +42,7 @@ export function HeaderHome() {
         <Ul $open={open} $headerCor={headerCor}>
           {navLink.map(({ link, name }) => (
             <Link
+              onClick={() => setOpen(!open)}
               key={name}
               href={link}
               className={`${pathname === link ? 'active' : ''}`}
