@@ -68,14 +68,14 @@ export const SliderButton = styled.button`
 `;
 
 export const SliderButtonPrev = styled(SliderButton)`
-  left: 603px;
+  left: 461px;
   margin-top: 185px;
   @media (min-width: ${styleGuide.breakpoints.large}) {
     left: 585px;
   }
 `;
 export const SliderButtonNext = styled(SliderButton)`
-  right: 603px;
+  right: 461px;
   margin-top: 185px;
   @media (min-width: ${styleGuide.breakpoints.large}) {
     right: 585px;
