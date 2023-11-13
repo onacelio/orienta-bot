@@ -20,9 +20,21 @@ export function Footer() {
             últimas atualizações em primeira mão.
           </p>
           <Icons>
-            <FaInstagram />
-            <FaGithub />
-            <FaDiscord />
+            <FaInstagram
+              onClick={() => {
+                window.open('https://www.instagram.com/orienta.bot/');
+              }}
+            />
+            <FaGithub
+              onClick={() => {
+                window.open('https://github.com/onacelio/orienta-bot');
+              }}
+            />
+            <FaDiscord
+              onClick={() => {
+                window.open('https://discord.gg/XnyyU3dE2C');
+              }}
+            />
           </Icons>
         </div>
 
@@ -30,7 +42,7 @@ export function Footer() {
           <h4>Links úteis</h4>
 
           <a href="/comandos">Comandos</a>
-          <a href="https://google.com">Acesar bot</a>
+          <a href="https://web.telegram.org/k/#@MCPF_EstagioBot">Acesar bot</a>
         </Suport>
 
         <Suport>

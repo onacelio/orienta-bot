@@ -25,7 +25,7 @@ export function SectionHero() {
 
           <button
             onClick={() => {
-              window.open('https://google.com');
+              window.open('https://web.telegram.org/k/#@MCPF_EstagioBot');
             }}
           >
             Acessar o bot no telegram

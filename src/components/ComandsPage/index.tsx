@@ -43,7 +43,9 @@ export function ComandsPage() {
     };
 
   const handleClick = (
-    e: MouseEvent<HTMLSpanElement, MouseEvent>,
+    e:
+      | React.MouseEvent<HTMLSpanElement, MouseEvent<HTMLSpanElement>>
+      | React.MouseEvent<HTMLSpanElement>,
     index: SetStateAction<number>
   ) => {
     const evento = e.target as HTMLElement;
@@ -63,7 +65,14 @@ export function ComandsPage() {
           <div>
             {topics.map((topic, index) => (
               <span
-                onClick={e => {
+                onClick={(
+                  e:
+                    | React.MouseEvent<
+                        HTMLSpanElement,
+                        MouseEvent<HTMLSpanElement>
+                      >
+                    | React.MouseEvent<HTMLSpanElement>
+                ) => {
                   handleClick(e, index);
                 }}
                 key={index}

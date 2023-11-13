@@ -51,7 +51,13 @@ export function HeaderHome() {
             </Link>
           ))}
         </Ul>
-        <button type="button" className="noneD">
+        <button
+          type="button"
+          className="noneD"
+          onClick={() => {
+            window.open('https://web.telegram.org/k/#@MCPF_EstagioBot');
+          }}
+        >
           Acessar o Bot
         </button>
         <ButtonMenu $open={open} onClick={() => setOpen(!open)}>
