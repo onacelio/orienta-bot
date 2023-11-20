@@ -100,7 +100,7 @@ export function ComandsPage() {
                 >
                   <Typography
                     sx={{
-                      width: '30%',
+                      width: '50%',
                       flexShrink: 0,
                       color: `${styleGuide.colors.yellow.yelloPrincipal}`,
                       fontSize: `${styleGuide.fontSize.default}`,

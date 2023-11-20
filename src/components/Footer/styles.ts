@@ -11,6 +11,7 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  background: ${styleGuide.colors.gray.color20};
 
   @media (min-width: ${styleGuide.breakpoints.large}) {
     justify-content: center;
@@ -63,6 +64,12 @@ export const Icons = styled.div`
   svg {
     width: 1.5rem;
     height: 1.5rem;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(255, 180, 34);
+    }
   }
 
   @media (min-width: ${styleGuide.breakpoints.medium}) {

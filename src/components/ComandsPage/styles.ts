@@ -67,13 +67,13 @@ export const Topics = styled.div`
     }
 
     span:hover {
-      color: #fff;
-      background-color: #1c1c1c;
+      color: #1c1c1c;
+      background-color: ${styleGuide.colors.yellow.yelloPrincipal};
     }
 
     > .active {
-      color: #fff;
-      background-color: #1c1c1c;
+      color: #1c1c1c;
+      background-color: ${styleGuide.colors.yellow.yelloPrincipal};
     }
   }
 
