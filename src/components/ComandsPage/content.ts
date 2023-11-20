@@ -4,7 +4,7 @@ export const comandsData = [
     comand: 'Avaliação',
     secondary: '/avaliacao',
     description:
-      'Como o estágiário é avaliado no final do processo e o peso das notas',
+      'Descreve as formas que o estudante é avaliado durante o período de estágio.',
     category: 'Estagiario'
   },
   {
@@ -12,7 +12,7 @@ export const comandsData = [
     comand: 'Frequencia',
     secondary: '/frequencia',
     description:
-      'Explicação sobre a frequência do estagiário, como preenche, etc',
+      'Informa ao estagiário a maneira correta de preencher a frequência, bem como os requisitos necessários para que a carga horária seja contabilizada após o período mensal.',
     category: 'Estagiario'
   },
   {
@@ -20,7 +20,7 @@ export const comandsData = [
     comand: 'Projeto social',
     secondary: '/projetoSocial',
     description:
-      'Esse comando fala sobre o que é o projeto social, como funciona, etc',
+      'Apresenta ao estagiário a relevância do Projeto Social e quais requisitos devem ser atendidos para que seja aprovado pela banca avaliadora.',
     category: 'Estagiario'
   },
   {
@@ -28,14 +28,14 @@ export const comandsData = [
     comand: 'cronograma',
     secondary: '/cronograma',
     description:
-      'Todas as datas como entrega de relatório, data prevista para fim do estágio, etc',
+      'Apresenta o cronograma seguido pela instituição escolar no decorrer do segundo semestre. É a partir desse comando que você conhecerá as datas da semana preparatória, mediação, entrega de relatório e outras informações.',
     category: 'Estagiario'
   },
   {
     id: 5,
     comand: 'Processo seletivo',
     secondary: '/processoSeletivo',
-    description: 'Explica como funciona o processo seletivo das concedentes',
+    description: 'Apresenta as formas de seleção de algumas concedentes.',
     category: 'Empresa'
   },
   {
@@ -43,14 +43,15 @@ export const comandsData = [
     comand: 'Carga horária',
     secondary: '/cargaHoraria',
     description:
-      'Fala sobre a carga horária do estágio, explicando o total de horas em campo, em mediação, etc',
+      'Explica como as horas são divididas entre campo, mediação, semana preparatória e a carga horária associada ao seu curso.',
     category: 'Empresa'
   },
   {
     id: 7,
     comand: 'Juridico',
     secondary: '/juridico',
-    description: 'Fala sobre detalhes jurídicos sobre o estágio',
+    description:
+      'Você pode conhecer os detalhes jurídicos associados ao seu trabalho em campo. Os principais pontos são: seguro contra acidentes pessoais, prazo de duração e outros.',
     category: 'Empresa'
   },
   {
@@ -58,7 +59,7 @@ export const comandsData = [
     comand: 'Mediação',
     secondary: '/mediacao',
     description:
-      'Dúvidas frequentes sobre a mediação de forma resumida, como o que é, como é definida a data, o que acontece nesse dia, etc',
+      'Explica o que é a mediação, indicando quando ocorre, e ressalta os itens essenciais a serem levados consigo.',
     category: 'Mediação'
   },
   {
@@ -66,7 +67,7 @@ export const comandsData = [
     comand: 'bolsa estágio',
     secondary: '/bolsaEstagio',
     description:
-      'Pergunta quantas horas trabalhadas para calcular o valor que irá receber',
+      'Consulte, a partir do comando, os valores de referência e o valor do descanso remunerado. Você pode calcular a partir das horas trabalhadas a estimativa do que receberá.',
     category: 'Bolsa estágio'
   },
   {
@@ -74,7 +75,7 @@ export const comandsData = [
     comand: 'Relatorio ABNT',
     secondary: '/relatotioAbnt',
     description:
-      'Dá dicas sobre as normas abnt que devem ser utilizadas no relatório final de estágio',
+      'Apresenta a estrutura que o seu relatório deve contemplar e dá dicas para escrever o texto.',
     category: 'Relatorio'
   },
   {
@@ -82,7 +83,7 @@ export const comandsData = [
     comand: 'relatorio estrutura',
     secondary: '/relatorioEstrutura',
     description:
-      'Dá dicas sobre como deve ser a estrutura do relatório final de estágio',
+      'Através desse comando você pode consultar o modelo do relatório disponibilizado pela instituição escolar.',
     category: 'Relatorio'
   },
   {
@@ -90,7 +91,7 @@ export const comandsData = [
     comand: 'Auto avaliação',
     secondary: '/autoavaliacao',
     description:
-      'Descreve, usando imagens e texto, como realizar essa tarefa no site do sice',
+      'Explica o intuito da autoavaliação e instrui o aluno como acessar e preencher os dados da forma correta através de um passo a passo com imagens.',
     category: 'Sice'
   },
   {
@@ -98,7 +99,7 @@ export const comandsData = [
     comand: 'Avaliação do orientador',
     secondary: '/avaliacaoDoOrientador',
     description:
-      'Descreve, usando imagens e texto, como realizar essa tarefa no site do sice',
+      'Explica o intuito da avaliação do orientador e instrui o aluno como acessar e preencher os dados da forma correta através de um passo a passo com imagens.',
     category: 'Sice'
   },
   {
@@ -106,7 +107,7 @@ export const comandsData = [
     comand: 'Envio do relatorio',
     secondary: '/envioRelatorio',
     description:
-      'Descreve, usando imagens e texto, como realizar essa tarefa no site do sice',
+      'Explica como acessar a área destinada ao envio do relatório através de um passo a passo com imagens.',
     category: 'Sice'
   }
 ];
