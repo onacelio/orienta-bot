@@ -57,10 +57,6 @@ export const SliderButton = styled.button`
   transform: translateY(-50%);
   border-radius: 50%;
 
-  &:hover {
-    background-color: #ccc3;
-  }
-
   display: none;
   z-index: 1;
 
@@ -70,17 +66,17 @@ export const SliderButton = styled.button`
 `;
 
 export const SliderButtonPrev = styled(SliderButton)`
-  left: 461px;
-  margin-top: 185px;
+  left: 366px;
+  margin-top: 224px;
   @media (min-width: ${styleGuide.breakpoints.large}) {
-    left: 585px;
+    left: 560px;
   }
 `;
 export const SliderButtonNext = styled(SliderButton)`
-  right: 461px;
-  margin-top: 185px;
+  right: 366px;
+  margin-top: 224px;
   @media (min-width: ${styleGuide.breakpoints.large}) {
-    right: 585px;
+    right: 560px;
   }
 `;
 
